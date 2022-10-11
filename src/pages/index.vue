@@ -4,7 +4,7 @@
   <div flex="~ col" gap-4 p-6>
     <GetIP />
 
-    <Base64Encoder />
+    <Base64 />
   </div>
 </template>
 

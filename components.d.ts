@@ -8,11 +8,8 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Base64: typeof import('./src/components/Base64.vue')['default']
-    Base64Encoder: typeof import('./src/components/Base64Encoder.vue')['default']
-    Footer: typeof import('./src/components/Footer.vue')['default']
     FooterBottom: typeof import('./src/components/common/FooterBottom.vue')['default']
     GetIP: typeof import('./src/components/GetIP.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     NavBar: typeof import('./src/components/common/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
