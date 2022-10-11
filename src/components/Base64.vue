@@ -29,13 +29,35 @@ function clearAll() {
         resize-none
         box-border
         p-4
+        rounded
         v-model="leftText"
       ></textarea>
 
       <div flex="~ col" gap-2>
-        <button w-20 @click="encodeLeftText">加密</button>
-        <button @click="decodeLeftText">解密</button>
-        <button @click="clearAll">清空</button>
+        <button
+          w-20
+          flex="~ row"
+          justify-evenly
+          items-center
+          @click="encodeLeftText"
+        >
+          <div i-mdi-lock-plus-outline />
+          加密
+        </button>
+        <button
+          w-20
+          flex="~ row"
+          justify-evenly
+          items-center
+          @click="decodeLeftText"
+        >
+          <div i-mdi-lock-remove-outline />
+          解密
+        </button>
+        <button w-20 flex="~ row" justify-evenly items-center @click="clearAll">
+          <div i-mdi-delete-outline />
+          清空
+        </button>
       </div>
 
       <textarea
@@ -45,6 +67,7 @@ function clearAll() {
         resize-none
         box-border
         p-4
+        rounded
         v-model="rightText"
       ></textarea>
     </div>
