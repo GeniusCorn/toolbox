@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import router from '@/router/index'
+
 const isDarkMode = ref(false)
 function toggleDarkMode() {
   isDarkMode.value = !isDarkMode.value
@@ -23,7 +25,14 @@ watch(isDarkMode, () => {
 
 <template>
   <div flex="~ row" justify-between items-center p-4>
-    <div flex="~ row" justify-center items-center gap-2>
+    <div
+      flex="~ row"
+      justify-center
+      items-center
+      gap-2
+      cursor-pointer
+      @click="router.push('/')"
+    >
       <div i-mdi-toolbox text-2xl dark:text-white />
       <div>
         <div>实用工具箱</div>
