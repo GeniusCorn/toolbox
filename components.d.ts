@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Base64: typeof import('./src/components/Base64.vue')['default']
     FooterBottom: typeof import('./src/components/common/FooterBottom.vue')['default']
     GetIP: typeof import('./src/components/GetIP.vue')['default']
+    Md5: typeof import('./src/components/Md5.vue')['default']
     NavBar: typeof import('./src/components/common/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

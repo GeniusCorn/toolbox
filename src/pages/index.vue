@@ -5,6 +5,8 @@
     <GetIP />
 
     <Base64 />
+
+    <Md5 />
   </div>
 </template>
 
