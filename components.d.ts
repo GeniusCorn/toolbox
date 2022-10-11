@@ -14,5 +14,7 @@ declare module '@vue/runtime-core' {
     GetIP: typeof import('./src/components/GetIP.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     NavBar: typeof import('./src/components/common/NavBar.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

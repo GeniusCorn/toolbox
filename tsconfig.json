@@ -13,7 +13,11 @@
     "strict": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "types": ["vite/client", "vue/ref-macros"],
+    "types": [
+      "vite/client",
+      "vue/ref-macros",
+      "vite-plugin-vue-layouts/client"
+    ],
     "paths": { "@/*": ["src/*"] }
   },
   "include": [

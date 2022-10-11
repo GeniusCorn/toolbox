@@ -4,9 +4,9 @@ module.exports = {
     es2021: true
   },
   extends: [
+    './.eslintrc-auto-import.json',
     'plugin:vue/vue3-essential',
     'standard-with-typescript',
-    './.eslintrc-auto-import.json',
     'prettier'
   ],
   overrides: [],
@@ -16,5 +16,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue'],
-  rules: {}
+  rules: {
+    'vue/multi-word-component-names': 'off'
+  }
 }
