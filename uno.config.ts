@@ -4,10 +4,11 @@ import {
   presetIcons,
   presetUno,
   presetTagify,
-  presetWebFonts
+  transformerDirectives
 } from 'unocss'
 
 export default defineConfig({
   shortcuts: [],
-  presets: [presetUno(), presetAttributify(), presetIcons(), presetTagify()]
+  presets: [presetUno(), presetAttributify(), presetIcons(), presetTagify()],
+  transformers: [transformerDirectives()]
 })

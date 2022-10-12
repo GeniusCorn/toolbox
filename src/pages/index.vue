@@ -1,13 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div flex="~ col" gap-4 p-6>
-    <GetIP />
+  <Base64 />
 
-    <Base64 />
-
-    <Md5 />
-  </div>
+  <Md5 />
 </template>
 
 <style scoped></style>
