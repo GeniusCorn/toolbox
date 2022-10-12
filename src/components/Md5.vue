@@ -20,12 +20,7 @@ function clearAll() {
     <div flex="~ row" justify-around items-center gap-4 h-25>
       <textarea
         autocomplete="off"
-        h-full
-        w-full
-        resize-none
-        box-border
-        p-4
-        rounded
+        class="textarea"
         v-model="leftText"
       ></textarea>
 
@@ -48,16 +43,15 @@ function clearAll() {
 
       <textarea
         autocomplete="off"
-        h-full
-        w-full
-        resize-none
-        box-border
-        p-4
-        rounded
+        class="textarea"
         v-model="rightText"
       ></textarea>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.textarea {
+  @apply h-full w-full resize-none box-border p-4 rounded;
+}
+</style>
