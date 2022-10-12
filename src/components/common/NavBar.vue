@@ -31,6 +31,7 @@ watch(isDarkMode, () => {
       items-center
       gap-2
       cursor-pointer
+      hover:text-gray
       @click="router.push('/')"
     >
       <div i-mdi-toolbox text-2xl dark:text-white />
@@ -43,6 +44,7 @@ watch(isDarkMode, () => {
       <!-- <div i-mdi-web /> -->
       <div
         i="mdi-white-balance-sunny dark:mdi-weather-night"
+        hover:text-gray
         cursor-pointer
         @click="toggleDarkMode"
       />
@@ -52,7 +54,7 @@ watch(isDarkMode, () => {
         text-black
         dark:text-white
       >
-        <div i-mdi-github />
+        <div i-mdi-github hover:text-gray />
       </a>
     </div>
   </div>
