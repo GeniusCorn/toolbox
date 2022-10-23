@@ -28,6 +28,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue/macros',
+        'vitest',
         {
           axios: [
             ['default', 'axios'] // import { default as axios } from 'axios',

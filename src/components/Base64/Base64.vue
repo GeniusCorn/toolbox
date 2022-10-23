@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { encode, decode } from 'js-base64'
+import { encodeText, decodeText } from './base64'
 
 let leftText = $ref('')
 let rightText = $ref('')
 
 function encodeLeftText() {
-  rightText = encode(leftText)
+  rightText = encodeText(leftText)
 }
 
 function decodeLeftText() {
-  rightText = decode(leftText)
+  rightText = decodeText(leftText)
 }
 
 function clearAll() {
@@ -23,9 +23,9 @@ function clearAll() {
     <div>base64 加密解密</div>
     <div flex="~ row" justify-around items-center gap-4 h-25>
       <textarea
+        v-model="leftText"
         autocomplete="off"
         class="textarea"
-        v-model="leftText"
       ></textarea>
 
       <div flex="~ col" gap-2>
@@ -56,9 +56,9 @@ function clearAll() {
       </div>
 
       <textarea
+        v-model="rightText"
         class="textarea"
         autocomplete="off"
-        v-model="rightText"
       ></textarea>
     </div>
   </div>

@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
+    "coverage": "vitest run --coverage",
     "dev": "vite",
     "lint": "eslint --ext .ts,.tsx,.vue src --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "base-64": "^1.0.0",
@@ -38,6 +40,7 @@
     "vite": "^3.1.8",
     "vite-plugin-pages": "^0.26.0",
     "vite-plugin-vue-layouts": "^0.7.0",
+    "vitest": "^0.24.3",
     "vue-tsc": "^0.40.13"
   }
 }
